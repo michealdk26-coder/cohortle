@@ -2405,6 +2405,7 @@ select:-webkit-autofill {
 }
 
 .stats-bar__count,
+.stat-num,
 .stats-bar__suffix {
   font-family: var(--font-heading);
   font-weight: 800;
@@ -2591,6 +2592,7 @@ select:-webkit-autofill {
   }
 
   .stats-bar__count,
+  .stat-num,
   .stats-bar__suffix {
     font-size: 2rem;
   }

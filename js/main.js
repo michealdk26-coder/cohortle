@@ -282,24 +282,24 @@ function animateCounter(el, target, duration) {
   requestAnimationFrame(update)
 }
 
-;(function () {
-  const statsBar = document.querySelector('.stats-bar')
-  if (!statsBar) return
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return
-
-      statsBar.querySelectorAll('.stats-bar__count').forEach(el => {
-        const target = parseInt(el.dataset.target)
-        if (!isNaN(target)) animateCounter(el, target)
+const statsBar = document.querySelector('.stats-bar')
+if (statsBar) {
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return
+        statsBar.querySelectorAll('.stat-num')
+          .forEach(el => {
+            const target = parseInt(el.dataset.target)
+            if (!isNaN(target))
+              animateCounter(el, target)
+          })
+        observer.unobserve(entry.target)
       })
-      observer.unobserve(entry.target)
-    })
-  }, { threshold: 0.4 })
-
+    }, { threshold: 0.4 }
+  )
   observer.observe(statsBar)
-})()
+}
 
 ;(function () {
   const impactSection = document.getElementById('impact')
