@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Page Not Found | Cohortle</title>
+  <link rel="stylesheet" href="css/404.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
+  <link rel="preload" href="https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_0.woff2" as="font" type="font/woff2" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    
+    .error-page {
+      min-height: 100vh;
+      background: var(--dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 6%;
+      position: relative;
+      overflow: hidden;
+    }
+
+    
+    .error-page::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    
+    .error-page::after {
+      content: '';
+      position: absolute;
+      top: -10%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(
+        circle,
+        rgba(26,122,74,0.2),
+        transparent 70%
+      );
+      pointer-events: none;
+    }
+
+    
+    .error-number {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(6rem, 20vw, 14rem);
+      line-height: 1;
+      letter-spacing: -4px;
+      background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.02)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+      z-index: 1;
+      margin-bottom: -20px;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    
+    .error-number .accent {
+      background: linear-gradient(
+        135deg,
+        var(--green-light),
+        var(--green)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .error-content {
+      position: relative;
+      z-index: 2;
+      max-width: 500px;
+    }
+
+    .error-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(26,122,74,0.2);
+      border: 1px solid rgba(26,122,74,0.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 0.8rem;
+      color: #6EE8A0;
+      font-weight: 500;
+      font-family: 'DM Sans', sans-serif;
+      margin-bottom: 24px;
+    }
+
+    .error-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      color: white;
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .error-desc {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.5);
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+
+    
+    .error-btns {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .error-btn-primary {
+      background: var(--green-light);
+      color: white;
+      padding: 13px 28px;
+      border-radius: 100px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: 2px solid var(--green-light);
+    }
+
+    .error-btn-primary:hover {
+      background: transparent;
+      color: var(--green-light);
+      transform: translateY(-2px);
+    }
+
+    .error-btn-outline {
+      border: 2px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.7);
+      padding: 13px 28px;
+      border-radius: 100px;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .error-btn-outline:hover {
+      border-color: rgba(255,255,255,0.4);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    
+    .error-links {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .error-link {
+      color: rgba(255,255,255,0.35);
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 400;
+      transition: color 0.2s ease;
+    }
+
+    .error-link:hover {
+      color: var(--green-light);
+    }
+
+    
+    @keyframes float404 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .error-number {
+      animation: float404 4s ease-in-out infinite;
+    }
+
+    
+    .redirect-notice {
+      margin-top: 24px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.2);
+    }
+
+    #countdown {
+      color: var(--green-light);
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      .error-btns {
+        flex-direction: column;
+        align-items: center;
+      }
+      .error-btn-primary,
+      .error-btn-outline {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<style>
+  #navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #pageLoader {
+    position: fixed;
+    inset: 0;
+    background: #0C1A12;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+</style>
+
+<div id="pageLoader">
+  <div class="loader-logo">Cohortle</div>
+  <div class="loader-bar">
+    <div class="loader-fill"></div>
+  </div>
+</div>
+
+<div id="pageTransition"></div>
+
+<div id="scrollProgress"></div>
+
+<nav id="navbar">
+  
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-dot"></span>
+    Cohortle
+  </a>
+
+  
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="our-approach.html">Our Approach</a></li>
+    <li><a href="what-we-support.html">What We Support</a></li>
+  </ul>
+
+  
+  <a href="contact.html" class="nav-cta">Partner With Us</a>
+
+  
+  <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="about.html" class="mobile-nav-link">About</a>
+  <a href="our-approach.html" class="mobile-nav-link">Our Approach</a>
+  <a href="what-we-support.html" class="mobile-nav-link">What We Support</a>
+  <a href="contact.html" class="mobile-nav-cta mobile-nav-link">Partner With Us</a>
+  <p class="mobile-nav-bottom">© 2026 Cohortle</p>
+</div>
+
+<span id="main-content" class="skip-anchor" tabindex="-1" aria-hidden="true"></span>
+<main class="error-page">
+  <div class="error-number">
+    <span class="accent">4</span>0<span class="accent">4</span>
+  </div>
+
+  <div class="error-content">
+    <div class="error-badge">
+      🔍 Page not found
+    </div>
+
+    <h1 class="error-title">
+      This page took a wrong turn
+    </h1>
+
+    <p class="error-desc">
+      The page you're looking for doesn't exist
+      or may have been moved. Let's get you back
+      on track.
+    </p>
+
+    <div class="error-btns">
+      <a href="index.html" class="error-btn-primary">
+        ← Back to Home
+      </a>
+      <a href="contact.html" class="error-btn-outline">
+        Contact Us
+      </a>
+    </div>
+
+    <p class="redirect-notice">
+      Redirecting to home in
+      <span id="countdown">10</span> seconds
+    </p>
+
+    <div class="error-links">
+      <a href="about.html" class="error-link">About</a>
+      <a href="our-approach.html" class="error-link">Our Approach</a>
+      <a href="what-we-support.html" class="error-link">What We Support</a>
+      <a href="contact.html" class="error-link">Partner With Us</a>
+    </div>
+  </div>
+</main>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+  
+  
+  let seconds = 10
+  const countdownEl = document.getElementById('countdown')
+
+  const timer = setInterval(() => {
+    seconds--
+    if (countdownEl) countdownEl.textContent = seconds
+    if (seconds <= 0) {
+      clearInterval(timer)
+      window.location.href = 'index.html'
+    }
+  }, 1000)
+
+  
+  
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar')
+    if (nav) {
+      nav.classList.toggle('scrolled', window.scrollY > 50)
+    }
+    
+    const bar = document.getElementById('scrollProgress')
+    if (bar) {
+      const pct = (window.scrollY /
+        (document.body.scrollHeight - window.innerHeight))
+        * 100
+      bar.style.width = Math.min(pct, 100) + '%'
+    }
+  })
+
+  
+  window.addEventListener('load', () => {
+    const loader = document.getElementById('pageLoader')
+    if (loader) {
+      setTimeout(() => {
+        loader.style.opacity = '0'
+        loader.style.transition = 'opacity 0.5s ease'
+        setTimeout(() => {
+          loader.style.display = 'none'
+        }, 500)
+      }, 1300)
+    }
+  })
+
+  
+  
+  window.addEventListener('DOMContentLoaded', () => {
+    const overlay = document.getElementById('pageTransition')
+    if (overlay) {
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          overlay.classList.remove('transition-active')
+        })
+      })
+    }
+  })
+
+  
+  ;(function () {
+    const hamburger = document.querySelector('.hamburger')
+    const mobileNav = document.querySelector('.mobile-nav')
+    if (!hamburger || !mobileNav) return
+    let isOpen = false
+    function openMenu() {
+      isOpen = true
+      hamburger.classList.add('open')
+      hamburger.setAttribute('aria-expanded', 'true')
+      mobileNav.classList.add('open')
+      document.body.style.overflow  = 'hidden'
+      document.body.style.position  = 'fixed'
+      document.body.style.width     = '100%'
+    }
+    function closeMenu() {
+      isOpen = false
+      hamburger.classList.remove('open')
+      hamburger.setAttribute('aria-expanded', 'false')
+      mobileNav.classList.remove('open')
+      document.body.style.overflow  = ''
+      document.body.style.position  = ''
+      document.body.style.width     = ''
+    }
+    hamburger.addEventListener('click', (e) => {
+      e.stopPropagation()
+      isOpen ? closeMenu() : openMenu()
+    })
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => closeMenu())
+    })
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isOpen) closeMenu()
+    })
+    mobileNav.addEventListener('touchmove', (e) => {
+      e.stopPropagation()
+    }, { passive: true })
+  })()
+
+  
+  const backToTopBtn = document.getElementById('backToTop')
+  if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+      backToTopBtn.classList.toggle('visible', window.scrollY > 400)
+    })
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+  }
+
+  
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href]')
+    if (!link) return
+    const href = link.getAttribute('href')
+    if (!href || href.startsWith('http') || href.startsWith('//') ||
+        href.startsWith('#') || href.startsWith('mailto') ||
+        href.startsWith('tel') || link.target === '_blank') return
+    e.preventDefault()
+    const overlay = document.getElementById('pageTransition')
+    if (overlay) overlay.classList.add('transition-active')
+    setTimeout(() => { window.location.href = href }, 400)
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cohortle — Purpose-built infrastructure for non-formal, cohort-based learning across Africa. We partner with purpose-driven organisations to design, organise, and sustain effective learning programmes."
+    />
+
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cohortle — Learning that actually creates impact" />
+    <meta
+      property="og:description"
+      content="Purpose-built infrastructure for non-formal, cohort-based learning across Africa."
+    />
+    <meta property="og:url" content="https://cohortle.com" />
+
+    <title>Cohortle — Learning that actually creates impact</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
+    <link rel="preload" href="https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_0.woff2" as="font" type="font/woff2" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+
+    
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    
+    <style>
+      #navbar {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        padding: 20px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #pageLoader {
+        position: fixed;
+        inset: 0;
+        background: #0C1A12;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+      }
+    </style>
+
+    
+    <div id="pageLoader" role="status" aria-label="Loading Cohortle">
+      <div class="loader-logo" aria-hidden="true">Cohortle</div>
+      <div class="loader-bar">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+
+    
+    <div id="pageTransition"></div>
+
+    
+    <div id="scrollProgress" aria-hidden="true"></div>
+
+    
+    <nav id="navbar">
+      
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-dot"></span>
+        Cohortle
+      </a>
+
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="our-approach.html">Our Approach</a></li>
+        <li><a href="what-we-support.html">What We Support</a></li>
+      </ul>
+
+      
+      <a href="contact.html" class="nav-cta">Partner With Us</a>
+
+      
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    
+    <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav-link active">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="our-approach.html" class="mobile-nav-link">Our Approach</a>
+      <a href="what-we-support.html" class="mobile-nav-link">What We Support</a>
+      <a href="contact.html" class="mobile-nav-cta mobile-nav-link">Partner With Us</a>
+      <p class="mobile-nav-bottom">© 2026 Cohortle</p>
+    </div>
+    
+
+    
+    
+    <span id="main-content" class="skip-anchor" tabindex="-1" aria-hidden="true"></span>
+    <section class="hero" id="home" aria-label="Hero section">
+
+      
+      <div class="hero__blob hero__blob--green"  aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--gold"   aria-hidden="true"></div>
+
+      
+      <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+      
+      <div class="hero__particles" aria-hidden="true">
+        <span class="hero__particle hero__particle--1"></span>
+        <span class="hero__particle hero__particle--2"></span>
+        <span class="hero__particle hero__particle--3"></span>
+        <span class="hero__particle hero__particle--4"></span>
+        <span class="hero__particle hero__particle--5"></span>
+        <span class="hero__particle hero__particle--6"></span>
+      </div>
+
+      
+      <div class="hero__content">
+
+        
+        <div class="hero__badge reveal" aria-label="Geographic focus: Africa">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          🌍 Purpose-built for Africa
+        </div>
+
+        
+        <h1 class="hero__headline reveal">
+          Learning that
+          <em class="hero__headline-accent">actually</em>
+          creates impact
+        </h1>
+
+        
+        <p class="hero__subtext reveal">
+          We partner with purpose-driven organisations to design, organise,
+          and sustain effective learning programmes&nbsp;— beyond classrooms
+          and into real-world impact.
+        </p>
+
+        
+        <div class="hero__buttons reveal">
+          <a href="contact.html"    class="btn btn--primary">Partner With Us &rarr;</a>
+          <a href="our-approach.html" class="btn btn--outline">See How It Works</a>
+        </div>
+
+      </div>
+      
+
+      
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span class="hero__scroll-arrow">&#8595;</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+
+    </section>
+    
+
+    
+    <section class="stats-bar reveal" id="stats" aria-label="Impact statistics">
+
+      
+      <div class="stats-bar__item">
+        <div class="stats-bar__number">
+          <span class="stats-bar__count" data-target="90" data-suffix="%">0</span><span class="stats-bar__suffix">%</span>
+        </div>
+        <p class="stats-bar__label">Cohort completion rate</p>
+      </div>
+
+      
+      <div class="stats-bar__item">
+        <div class="stats-bar__number">
+          <span class="stats-bar__count" data-target="3" data-suffix="x">0</span><span class="stats-bar__suffix">×</span>
+        </div>
+        <p class="stats-bar__label">Better outcomes than self-paced</p>
+      </div>
+
+      
+      <div class="stats-bar__item">
+        <div class="stats-bar__number">
+          <span class="stats-bar__count" data-target="50" data-suffix="+">0</span><span class="stats-bar__suffix">+</span>
+        </div>
+        <p class="stats-bar__label">Organisations partnered with</p>
+      </div>
+
+      
+      <div class="stats-bar__item">
+        <div class="stats-bar__number">
+          <span class="stats-bar__count" data-target="12" data-suffix="+">0</span><span class="stats-bar__suffix">+</span>
+        </div>
+        <p class="stats-bar__label">African countries reached</p>
+      </div>
+
+    </section>
+    
+
+    
+    <section class="challenge" id="challenge" aria-label="The challenge organisations face">
+      <div class="challenge__inner">
+
+        
+        <div class="challenge__left">
+
+          
+          <div class="challenge__label" aria-hidden="true">Why It Matters</div>
+
+          
+          <h2 class="challenge__heading reveal-left">
+            Passion alone won't<br>
+            <span>sustain a programme</span>
+          </h2>
+
+          
+          <p class="challenge__intro reveal-left">
+            Across Africa, learning is thriving outside classrooms — through
+            fellowships, bootcamps, digital skills programmes, and community
+            clubs. These programmes carry real weight. But without the right
+            infrastructure, most lose momentum long before they reach their goals.
+          </p>
+
+          
+          <p class="challenge__list-header reveal-left">Here's what holds most programmes back:</p>
+
+          
+          <ul class="pain-list" aria-label="Common programme challenges">
+
+            <li class="pain-list__item reveal" data-delay="0s">
+              <span class="pain-list__icon" aria-hidden="true">✕</span>
+              <span class="pain-list__text">No clear structure or programme roadmap</span>
+            </li>
+
+            <li class="pain-list__item reveal" data-delay="0.08s">
+              <span class="pain-list__icon" aria-hidden="true">✕</span>
+              <span class="pain-list__text">Too many disconnected tools and platforms</span>
+            </li>
+
+            <li class="pain-list__item reveal" data-delay="0.16s">
+              <span class="pain-list__icon" aria-hidden="true">✕</span>
+              <span class="pain-list__text">Learners losing interest halfway through</span>
+            </li>
+
+            <li class="pain-list__item reveal" data-delay="0.24s">
+              <span class="pain-list__icon" aria-hidden="true">✕</span>
+              <span class="pain-list__text">No way to measure real learning outcomes</span>
+            </li>
+
+            <li class="pain-list__item reveal" data-delay="0.32s">
+              <span class="pain-list__icon" aria-hidden="true">✕</span>
+              <span class="pain-list__text">Quality drops when moving to the next cohort</span>
+            </li>
+
+          </ul>
+        </div>
+        
+
+        
+        <div class="challenge__right reveal-right">
+          <div class="org-card">
+
+            
+            <div class="org-card__glow" aria-hidden="true"></div>
+
+            
+            <h3 class="org-card__heading">Who's running these programmes?</h3>
+
+            
+            <div class="org-row">
+              <div class="org-row__icon org-row__icon--green" aria-hidden="true">🏛</div>
+              <div class="org-row__info">
+                <span class="org-row__name">University &amp; Innovation Hubs</span>
+                <span class="org-row__type">Fellowships &amp; student programmes</span>
+              </div>
+              <span class="org-row__tag org-row__tag--green">Active</span>
+            </div>
+
+            
+            <div class="org-row">
+              <div class="org-row__icon org-row__icon--gold" aria-hidden="true">💡</div>
+              <div class="org-row__info">
+                <span class="org-row__name">Nonprofits &amp; Foundations</span>
+                <span class="org-row__type">Community learning initiatives</span>
+              </div>
+              <span class="org-row__tag org-row__tag--gold">Partner</span>
+            </div>
+
+            
+            <div class="org-row">
+              <div class="org-row__icon org-row__icon--purple" aria-hidden="true">🚀</div>
+              <div class="org-row__info">
+                <span class="org-row__name">Training &amp; Skills Providers</span>
+                <span class="org-row__type">Bootcamps &amp; digital skills</span>
+              </div>
+              <span class="org-row__tag org-row__tag--purple">Growing</span>
+            </div>
+
+            
+            <div class="org-card__metric">
+              <p class="org-card__metric-label">Programme Retention Improvement</p>
+              <div class="org-card__metric-value">
+                <span class="org-card__metric-number">+78%</span>
+                <span class="org-card__metric-caption">average across cohorts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+
+      </div>
+    </section>
+    
+
+    
+
+    
+    <section id="about" aria-label="About Cohortle">
+    </section>
+
+    
+    <section class="what-we-do" id="what-we-do" aria-label="What We Do">
+      <div class="wwd__header">
+
+        
+        <div class="section-label section-label--green">What We Do</div>
+
+        
+        <h2 class="wwd__heading reveal">
+          The infrastructure behind<br>
+          <span>programmes that last</span>
+        </h2>
+
+        
+        <p class="wwd__intro reveal">
+          We handle the structure, systems, and ongoing support that keep
+          programmes alive &mdash; so your team can focus entirely on
+          your learners.
+        </p>
+
+      </div>
+
+      
+      <div class="service-grid">
+
+        
+        <div class="service-card reveal-scale" data-delay="0s">
+          <div class="service-card__icon" aria-hidden="true">&#128506;&#65039;</div>
+          <h3 class="service-card__heading">Programme Architecture</h3>
+          <p class="service-card__text">
+            We turn your vision into a structured learning journey &mdash;
+            clear goals, defined milestones, and outcomes your learners
+            can genuinely feel at every stage.
+          </p>
+          <a href="contact.html" class="service-card__link">Learn more <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        
+        <div class="service-card reveal-scale" data-delay="0.08s">
+          <div class="service-card__icon" aria-hidden="true">&#9881;&#65039;</div>
+          <h3 class="service-card__heading">Seamless Delivery Systems</h3>
+          <p class="service-card__text">
+            From cohort scheduling to content flow &mdash; we put the
+            systems in place that keep your programme running smoothly,
+            week after week, without the chaos.
+          </p>
+          <a href="contact.html" class="service-card__link">Learn more <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        
+        <div class="service-card reveal-scale" data-delay="0.16s">
+          <div class="service-card__icon" aria-hidden="true">&#128202;</div>
+          <h3 class="service-card__heading">Impact Tracking &amp; Reporting</h3>
+          <p class="service-card__text">
+            Go beyond attendance figures. We help you measure real
+            learning growth, track meaningful outcomes, and produce
+            reports that prove your programme&rsquo;s value.
+          </p>
+          <a href="contact.html" class="service-card__link">Learn more <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        
+        <div class="service-card reveal-scale" data-delay="0.24s">
+          <div class="service-card__icon" aria-hidden="true">&#129309;</div>
+          <h3 class="service-card__heading">Learner Engagement &amp; Community</h3>
+          <p class="service-card__text">
+            We build cohort communities where learners genuinely support
+            one another, stay motivated, and stay connected long after
+            the programme wraps up.
+          </p>
+          <a href="contact.html" class="service-card__link">Learn more <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        
+        <div class="service-card reveal-scale" data-delay="0.32s">
+          <div class="service-card__icon" aria-hidden="true">&#128295;</div>
+          <h3 class="service-card__heading">Tools &amp; Infrastructure Setup</h3>
+          <p class="service-card__text">
+            We consolidate your scattered platforms into one unified
+            system &mdash; purpose-built for the real operational demands
+            of running a learning programme.
+          </p>
+          <a href="contact.html" class="service-card__link">Learn more <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+        
+        <div class="service-card reveal-scale" data-delay="0.40s">
+          <div class="service-card__icon" aria-hidden="true">&#127807;</div>
+          <h3 class="service-card__heading">Cohort Scaling &amp; Replication</h3>
+          <p class="service-card__text">
+            When you&rsquo;re ready to grow, we help you replicate what
+            works across new cohorts and new regions &mdash; without ever
+            compromising what makes your programme great.
+          </p>
+          <a href="contact.html" class="service-card__link">Learn more <span aria-hidden="true">&rarr;</span></a>
+        </div>
+
+      </div>
+    </section>
+    
+
+    
+    <section class="who-we-work-with" id="who-we-work-with" aria-label="Who We Work With">
+      <div class="wwww__header">
+
+        
+        <div class="section-label section-label--lightgreen">Who We Work With</div>
+
+        
+        <h2 class="wwww__heading reveal">
+          Built for organisations that<br>
+          <span>put learners first</span>
+        </h2>
+
+        
+        <p class="wwww__intro reveal">
+          We partner with purpose-driven teams across Africa who are
+          genuinely committed to learning outcomes &mdash; not just
+          ticking programme boxes.
+        </p>
+
+      </div>
+
+      
+      <div class="partner-grid">
+
+        
+        <div class="partner-card reveal" data-delay="0s">
+          <span class="partner-card__emoji" aria-hidden="true">&#127963;&#65039;</span>
+          <h3 class="partner-card__heading">Nonprofits &amp; Foundations</h3>
+          <p class="partner-card__text">
+            Mission-driven organisations running community development,
+            youth empowerment, and social impact learning programmes
+            across Africa.
+          </p>
+          <p class="partner-card__chips-label">What we help with:</p>
+          <div class="partner-card__chips">
+            <span class="chip">Programme Design</span>
+            <span class="chip">Cohort Management</span>
+            <span class="chip">Impact Reporting</span>
+          </div>
+        </div>
+
+        
+        <div class="partner-card reveal" data-delay="0.1s">
+          <span class="partner-card__emoji" aria-hidden="true">&#127891;</span>
+          <h3 class="partner-card__heading">Universities &amp; Innovation Hubs</h3>
+          <p class="partner-card__text">
+            Student-facing centres, entrepreneurship hubs, and career
+            development programmes embedded within higher education
+            institutions.
+          </p>
+          <p class="partner-card__chips-label">What we help with:</p>
+          <div class="partner-card__chips">
+            <span class="chip">Fellowship Programmes</span>
+            <span class="chip">Student Engagement</span>
+            <span class="chip">Outcome Tracking</span>
+          </div>
+        </div>
+
+        
+        <div class="partner-card reveal" data-delay="0.2s">
+          <span class="partner-card__emoji" aria-hidden="true">&#128187;</span>
+          <h3 class="partner-card__heading">Training &amp; Skills Providers</h3>
+          <p class="partner-card__text">
+            Bootcamps, vocational training programmes, and digital skills
+            organisations building real workforce capacity across
+            the continent.
+          </p>
+          <p class="partner-card__chips-label">What we help with:</p>
+          <div class="partner-card__chips">
+            <span class="chip">Bootcamp Structure</span>
+            <span class="chip">Learner Retention</span>
+            <span class="chip">Skills Tracking</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+
+    
+    <section class="testimonials" id="testimonials" aria-label="Partner testimonials">
+      <div class="testimonials__header">
+
+        
+        <div class="section-label section-label--green">Voices From Our Partners</div>
+
+        
+        <h2 class="testimonials__heading reveal">
+          Real organisations,
+          <span>real results</span>
+        </h2>
+
+      </div>
+
+      
+      <div class="testimonials__grid">
+
+        
+        <div class="tcard reveal-scale" data-delay="0s">
+          
+          <span class="tcard__quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote class="tcard__quote">
+            &ldquo;Running our fellowship used to feel like firefighting every single week.
+            Since partnering with Cohortle, each cohort is structured, predictable, and
+            our learners actually reach the finish line. That change alone has transformed
+            how we operate.&rdquo;
+          </blockquote>
+          <footer class="tcard__person">
+            <div class="tcard__avatar" aria-hidden="true">AO</div>
+            <div>
+              <p class="tcard__name">Amara Osei</p>
+              <p class="tcard__role">Programme Director, YouthBridge Foundation &middot; Ghana</p>
+            </div>
+          </footer>
+        </div>
+
+        
+        <div class="tcard reveal-scale" data-delay="0.1s">
+          <span class="tcard__quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote class="tcard__quote">
+            &ldquo;We were losing more than half of our learners before the halfway point.
+            It was demoralising. Cohortle gave us a real system &mdash; and now we complete
+            full cohorts consistently. The difference in energy from our team and learners
+            is night and day.&rdquo;
+          </blockquote>
+          <footer class="tcard__person">
+            <div class="tcard__avatar" aria-hidden="true">NK</div>
+            <div>
+              <p class="tcard__name">Nkechi Adeyemi</p>
+              <p class="tcard__role">Head of Learning, TechRise Hub &middot; Nigeria</p>
+            </div>
+          </footer>
+        </div>
+
+        
+        <div class="tcard reveal-scale" data-delay="0.2s">
+          <span class="tcard__quote-mark" aria-hidden="true">&ldquo;</span>
+          <blockquote class="tcard__quote">
+            &ldquo;Our funders kept asking for evidence of impact and we didn&rsquo;t have
+            a clear answer. Cohortle built us the tracking and reporting infrastructure
+            we needed. Now we walk into every review with confidence and data that
+            actually tells our story.&rdquo;
+          </blockquote>
+          <footer class="tcard__person">
+            <div class="tcard__avatar" aria-hidden="true">FM</div>
+            <div>
+              <p class="tcard__name">Fatima Musa</p>
+              <p class="tcard__role">Executive Director, Sahel Skills Initiative &middot; Senegal</p>
+            </div>
+          </footer>
+        </div>
+
+      </div>
+    </section>
+    
+
+    
+    <section class="cta-section" id="contact" aria-label="Get in touch with Cohortle">
+
+      
+      <div class="cta-section__blob cta-section__blob--green" aria-hidden="true"></div>
+      <div class="cta-section__blob cta-section__blob--gold"  aria-hidden="true"></div>
+
+      <div class="cta-section__inner">
+
+        
+        <div class="cta-section__left reveal-left">
+
+          
+          <div class="cta-label">Ready to get started?</div>
+
+          
+          <h2 class="cta-section__heading">
+            Let&rsquo;s build something<br>
+            that actually works
+          </h2>
+
+          
+          <p class="cta-section__text">
+            Whether you&rsquo;re launching your first cohort or trying to turn around
+            a struggling programme &mdash; we&rsquo;d love to hear about your work
+            and explore exactly how we can help.
+          </p>
+
+          
+          <div class="cta-contact-rows">
+
+            <div class="cta-contact-row">
+              <div class="cta-contact-row__icon" aria-hidden="true">&#128231;</div>
+              <span class="cta-contact-row__text">partner@cohortle.com</span>
+            </div>
+
+            <div class="cta-contact-row">
+              <div class="cta-contact-row__icon" aria-hidden="true">&#127757;</div>
+              <span class="cta-contact-row__text">Serving organisations across Africa</span>
+            </div>
+
+            <div class="cta-contact-row">
+              <div class="cta-contact-row__icon" aria-hidden="true">&#128172;</div>
+              <span class="cta-contact-row__text">Response within 48 hours</span>
+            </div>
+
+          </div>
+        </div>
+        
+
+        
+        <div class="cta-form-card reveal-right">
+
+          
+          <div class="cta-form__row">
+            <div class="cta-form__field">
+              <label class="cta-form__label" for="firstName">First Name</label>
+              <input
+                class="cta-form__input"
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Amara"
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="cta-form__field">
+              <label class="cta-form__label" for="lastName">Last Name</label>
+              <input
+                class="cta-form__input"
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Osei"
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+
+          
+          <div class="cta-form__field">
+            <label class="cta-form__label" for="orgName">Organisation Name</label>
+            <input
+              class="cta-form__input"
+              type="text"
+              id="orgName"
+              name="orgName"
+              placeholder="YouthBridge Foundation"
+              autocomplete="organization"
+            />
+          </div>
+
+          
+          <div class="cta-form__field">
+            <label class="cta-form__label" for="email">Email Address</label>
+            <input
+              class="cta-form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="amara@youthbridge.org"
+              autocomplete="email"
+            />
+          </div>
+
+          
+          <div class="cta-form__field">
+            <label class="cta-form__label" for="orgType">Type of Organisation</label>
+            <select class="cta-form__input cta-form__select" id="orgType" name="orgType">
+              <option value="" disabled selected>Select your organisation type</option>
+              <option value="nonprofit">Nonprofit / Foundation</option>
+              <option value="university">University / Innovation Hub</option>
+              <option value="training">Training Provider</option>
+              <option value="government">Government Agency</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          
+          <div class="cta-form__field">
+            <label class="cta-form__label" for="message">Tell us about your programme</label>
+            <textarea
+              class="cta-form__input cta-form__textarea"
+              id="message"
+              name="message"
+              placeholder="What kind of programme are you running? How many learners? What challenges are you facing?"
+            ></textarea>
+          </div>
+
+          
+          <button class="cta-form__submit" id="ctaSubmitBtn" type="button">
+            Send Message &rarr;
+          </button>
+
+        </div>
+        
+
+      </div>
+    </section>
+    
+
+    
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
+
+      
+      <div class="footer__grid">
+
+        
+        <div class="footer__brand">
+          
+          <a href="#home" class="footer__logo" aria-label="Cohortle — back to top">
+            Cohortle
+            <span class="footer__logo-dot" aria-hidden="true"></span>
+          </a>
+
+          
+          <p class="footer__tagline">
+            Purpose-built infrastructure for non-formal,
+            cohort-based learning across Africa.
+          </p>
+
+          
+          <div class="footer__socials" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn" rel="noopener">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter/X" rel="noopener">&#120143;</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram" rel="noopener">ig</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube" rel="noopener">yt</a>
+          </div>
+        </div>
+
+        
+        <nav class="footer__col" aria-label="Footer pages navigation">
+          <p class="footer__col-heading">Pages</p>
+          <a href="#home"     class="footer__link">Home</a>
+          <a href="#about"    class="footer__link">About</a>
+          <a href="#approach" class="footer__link">Our Approach</a>
+          <a href="what-we-support.html" class="footer__link">What We Support</a>
+          <a href="contact.html"  class="footer__link">Partner With Us</a>
+        </nav>
+
+        
+        <nav class="footer__col" aria-label="Footer services navigation">
+          <p class="footer__col-heading">What We Do</p>
+          <a href="#what-we-do" class="footer__link">Programme Design</a>
+          <a href="#what-we-do" class="footer__link">Delivery Support</a>
+          <a href="#what-we-do" class="footer__link">Impact Tracking</a>
+          <a href="#what-we-do" class="footer__link">Community Building</a>
+          <a href="#what-we-do" class="footer__link">Tools &amp; Infrastructure</a>
+          <a href="#what-we-do" class="footer__link">Scaling Support</a>
+        </nav>
+
+        
+        <div class="footer__col">
+          <p class="footer__col-heading">Get In Touch</p>
+          <p class="footer__contact-item">&#128231; partner@cohortle.com</p>
+          <p class="footer__contact-item">&#127757; Across Africa</p>
+          <p class="footer__contact-item">&#128172; 48hr response time</p>
+        </div>
+
+      </div>
+
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Cohortle. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Service</a>
+        </div>
+      </div>
+
+    </footer>
+    
+
+    
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    
+    
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar')
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 50)
+      }, { passive: true })
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

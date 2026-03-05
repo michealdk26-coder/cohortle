@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Our five-phase approach to building learning programmes that actually work — from discovery and design through to community and scale."
+    />
+
+    
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Our Approach | Cohortle" />
+    <meta property="og:description" content="A repeatable, five-phase framework for designing, running and sustaining effective cohort-based learning programmes across Africa." />
+    <meta property="og:url"         content="https://cohortle.com/our-approach" />
+
+    <title>Our Approach | Cohortle</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com"/>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com"/>
+    <link rel="preload" href="https://fonts.gstatic.com/s/syne/v22/8vIS7w4qzmVxsWxjBZRjr0FKM_0.woff2" as="font" type="font/woff2" crossorigin/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="css/our-approach.css" />
+  </head>
+
+  <body>
+
+    
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    
+    <style>
+      #navbar {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 100;
+        padding: 20px 6%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      #pageLoader {
+        position: fixed;
+        inset: 0;
+        background: #0C1A12;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+      }
+    </style>
+
+    
+    <div id="pageLoader" role="status" aria-label="Loading Cohortle">
+      <div class="loader-logo" aria-hidden="true">Cohortle</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+
+    
+    <div id="pageTransition"></div>
+
+    
+    <div id="scrollProgress" aria-hidden="true"></div>
+
+    
+    <div id="phaseProgress" class="phase-progress-bar" aria-label="Phase progress" aria-hidden="true">
+      <div class="phase-progress-track">
+        <div class="phase-pip active" data-phase="1">1</div>
+        <div class="phase-pip"        data-phase="2">2</div>
+        <div class="phase-pip"        data-phase="3">3</div>
+        <div class="phase-pip"        data-phase="4">4</div>
+        <div class="phase-pip"        data-phase="5">5</div>
+      </div>
+    </div>
+
+    
+    <nav id="navbar">
+      
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-dot"></span>
+        Cohortle
+      </a>
+
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="our-approach.html" class="active">Our Approach</a></li>
+        <li><a href="what-we-support.html">What We Support</a></li>
+      </ul>
+
+      
+      <a href="contact.html" class="nav-cta">Partner With Us</a>
+
+      
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    
+    <div class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="our-approach.html" class="mobile-nav-link active">Our Approach</a>
+      <a href="what-we-support.html" class="mobile-nav-link">What We Support</a>
+      <a href="contact.html" class="mobile-nav-cta mobile-nav-link">Partner With Us</a>
+      <p class="mobile-nav-bottom">© 2026 Cohortle</p>
+    </div>
+    
+
+    
+    
+    <span id="main-content" class="skip-anchor" tabindex="-1" aria-hidden="true"></span>
+    <section class="approach-hero" id="approach-hero" aria-label="Our Approach introduction">
+
+      
+      <div class="approach-hero__grid" aria-hidden="true"></div>
+
+      
+      <div class="approach-hero__blob approach-hero__blob--green" aria-hidden="true"></div>
+      <div class="approach-hero__blob approach-hero__blob--gold"  aria-hidden="true"></div>
+
+      <div class="approach-hero__content">
+
+        
+        <p class="approach-hero__label reveal">Our Approach</p>
+
+        
+        <h1 class="approach-hero__heading reveal">
+          A framework built<br>
+          for <span class="approach-hero__accent">programmes that last</span>
+        </h1>
+
+        
+        <p class="approach-hero__sub reveal">
+          We don&rsquo;t just hand you a toolkit. We work with you through
+          five carefully designed phases — from first conversation to
+          a thriving, self-sustaining learning community.
+        </p>
+
+        
+        <div class="approach-hero__cta reveal">
+          <a href="#phases" class="btn btn--primary">Explore the five phases &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+    
+
+    
+    <section class="phase-overview" id="phase-overview" aria-label="Five-phase overview">
+
+      <div class="phase-overview__inner">
+
+        
+        <div class="phase-overview__header">
+          <div class="section-tag section-tag--green">The Five Phases</div>
+          <h2 class="approach-h2 reveal">
+            How we work<br>
+            <span>with your organisation</span>
+          </h2>
+          <p class="approach-intro reveal">
+            Each phase is designed to build on the last — creating momentum
+            that carries your programme all the way from concept to community.
+          </p>
+        </div>
+
+        
+        <div class="phase-overview-grid reveal">
+
+          
+          <div class="phase-overview-card">
+            <span class="phase-overview-card__number">01</span>
+            <h3 class="phase-overview-card__name">Discover &amp; Design</h3>
+            <p class="phase-overview-card__desc">
+              Understand your context, goals and learners — then build a blueprint.
+            </p>
+          </div>
+
+          
+          <div class="phase-overview-card">
+            <span class="phase-overview-card__number">02</span>
+            <h3 class="phase-overview-card__name">Build &amp; Prepare</h3>
+            <p class="phase-overview-card__desc">
+              Develop curriculum, set up systems, and get your team launch-ready.
+            </p>
+          </div>
+
+          
+          <div class="phase-overview-card">
+            <span class="phase-overview-card__number">03</span>
+            <h3 class="phase-overview-card__name">Deliver &amp; Support</h3>
+            <p class="phase-overview-card__desc">
+              Run the programme with live operational support every step of the way.
+            </p>
+          </div>
+
+          
+          <div class="phase-overview-card">
+            <span class="phase-overview-card__number">04</span>
+            <h3 class="phase-overview-card__name">Measure &amp; Report</h3>
+            <p class="phase-overview-card__desc">
+              Track real outcomes, capture data, and produce evidence of impact.
+            </p>
+          </div>
+
+          
+          <div class="phase-overview-card">
+            <span class="phase-overview-card__number">05</span>
+            <h3 class="phase-overview-card__name">Sustain &amp; Scale</h3>
+            <p class="phase-overview-card__desc">
+              Build the foundations for the next cohort and grow sustainably.
+            </p>
+          </div>
+
+        </div>
+        
+
+      </div>
+    </section>
+    
+
+    
+    <section class="phases-section" id="phases" aria-label="Five phases in detail">
+      <div class="phases-section__inner">
+
+        
+        <div class="phase-block" data-phase="1">
+
+          
+          <div class="phase-text">
+
+            
+            <div class="phase-badge" aria-hidden="true">Phase 01</div>
+
+            
+            <div class="section-tag section-tag--green">Discover &amp; Design</div>
+
+            <h2 class="approach-h2">
+              Start with<br>
+              <span>deep understanding</span>
+            </h2>
+
+            <p class="phase-desc">
+              Before we design anything, we listen. We spend time with your team,
+              your learners, and your context — building a clear picture of where
+              you are, what you need, and what success actually looks like for
+              your organisation.
+            </p>
+
+            
+            <ul class="phase-bullets" aria-label="Phase 1 activities">
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Stakeholder interviews and programme audit
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Learner needs assessment and context mapping
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Goal-setting workshop with your core team
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Delivery of a full Programme Blueprint document
+              </li>
+            </ul>
+
+          </div>
+          
+
+          
+          <div class="phase-visual">
+            <div class="phase-visual-card phase-visual-card--dark">
+
+              
+              <p class="pvc__heading">Programme Blueprint</p>
+
+              
+              <div class="pvc__blueprint">
+
+                <div class="pvc__blueprint-row">
+                  <span class="pvc__blueprint-label">Programme Goal</span>
+                  <span class="pvc__blueprint-tag pvc__blueprint-tag--green">Defined ✓</span>
+                </div>
+
+                <div class="pvc__blueprint-row">
+                  <span class="pvc__blueprint-label">Learner Profiles</span>
+                  <span class="pvc__blueprint-tag pvc__blueprint-tag--green">Defined ✓</span>
+                </div>
+
+                <div class="pvc__blueprint-row">
+                  <span class="pvc__blueprint-label">Phase Milestones</span>
+                  <span class="pvc__blueprint-tag pvc__blueprint-tag--gold">In Review</span>
+                </div>
+
+                <div class="pvc__blueprint-row">
+                  <span class="pvc__blueprint-label">Success Metrics</span>
+                  <span class="pvc__blueprint-tag pvc__blueprint-tag--muted">Pending</span>
+                </div>
+
+                <div class="pvc__blueprint-row">
+                  <span class="pvc__blueprint-label">Delivery Format</span>
+                  <span class="pvc__blueprint-tag pvc__blueprint-tag--muted">Pending</span>
+                </div>
+
+              </div>
+
+              
+              <div class="pvc__output">
+                <span class="pvc__output-icon" aria-hidden="true">📄</span>
+                <span class="pvc__output-text">Output: Programme Blueprint</span>
+              </div>
+
+            </div>
+          </div>
+          
+
+        </div>
+        
+
+        
+        <div class="phase-block reverse" data-phase="2">
+
+          
+          <div class="phase-visual">
+            <div class="phase-visual-card phase-visual-card--cream">
+
+              <p class="pvc__heading pvc__heading--dark">Build Timeline</p>
+
+              
+              <div class="pvc__timeline">
+
+                <div class="pvc__timeline-item">
+                  <div class="pvc__timeline-meta">
+                    <span class="pvc__timeline-week">Week 1–2</span>
+                    <span class="pvc__timeline-task">Curriculum framework</span>
+                  </div>
+                  
+                  <div class="pvc__timeline-track">
+                    <div class="timeline-bar timeline-bar-1"></div>
+                  </div>
+                </div>
+
+                <div class="pvc__timeline-item">
+                  <div class="pvc__timeline-meta">
+                    <span class="pvc__timeline-week">Week 3–4</span>
+                    <span class="pvc__timeline-task">Platform &amp; tools setup</span>
+                  </div>
+                  <div class="pvc__timeline-track">
+                    <div class="timeline-bar timeline-bar-2"></div>
+                  </div>
+                </div>
+
+                <div class="pvc__timeline-item">
+                  <div class="pvc__timeline-meta">
+                    <span class="pvc__timeline-week">Week 5–6</span>
+                    <span class="pvc__timeline-task">Facilitator training</span>
+                  </div>
+                  <div class="pvc__timeline-track">
+                    <div class="timeline-bar timeline-bar-3"></div>
+                  </div>
+                </div>
+
+              </div>
+
+              
+              <div class="pvc__launch-badge">
+                <span class="pvc__launch-dot" aria-hidden="true"></span>
+                Launch-ready
+              </div>
+
+            </div>
+          </div>
+          
+
+          
+          <div class="phase-text">
+
+            <div class="phase-badge" aria-hidden="true">Phase 02</div>
+            <div class="section-tag section-tag--green">Build &amp; Prepare</div>
+
+            <h2 class="approach-h2">
+              Build the engine<br>
+              <span>before you launch</span>
+            </h2>
+
+            <p class="phase-desc">
+              Once we have a blueprint, we get to work building everything
+              your programme needs to run smoothly. Curriculum, facilitation
+              guides, communication systems, learner onboarding flows — all
+              designed with your team, not just for them.
+            </p>
+
+            <ul class="phase-bullets" aria-label="Phase 2 activities">
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Curriculum and session design
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Facilitator guides and resource packs
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Platform configuration and tool integration
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Learner onboarding and communication flows
+              </li>
+            </ul>
+
+          </div>
+          
+
+        </div>
+        
+
+        
+        <div class="phase-block" data-phase="3">
+
+          
+          <div class="phase-text">
+
+            <div class="phase-badge" aria-hidden="true">Phase 03</div>
+            <div class="section-tag section-tag--green">Deliver &amp; Support</div>
+
+            <h2 class="approach-h2">
+              Stay in the room<br>
+              <span>throughout delivery</span>
+            </h2>
+
+            <p class="phase-desc">
+              Most support evaporates the moment a programme goes live.
+              We do the opposite. We stay alongside your team during delivery —
+              monitoring engagement, flagging drops before they become
+              dropouts, and solving problems in real time.
+            </p>
+
+            <ul class="phase-bullets" aria-label="Phase 3 activities">
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Weekly operational check-ins with your team
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Learner engagement monitoring and early intervention
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Mid-programme review and real-time adjustments
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Facilitator support and coaching throughout
+              </li>
+            </ul>
+
+          </div>
+
+          
+          <div class="phase-visual">
+            <div class="phase-visual-card phase-visual-card--dark">
+
+              <p class="pvc__heading">Live Programme Status</p>
+
+              
+              <div class="pvc__checklist">
+
+                <div class="pvc__check-row pvc__check-row--done">
+                  <span class="pvc__check-icon" aria-hidden="true">✓</span>
+                  <span class="pvc__check-text">Cohort 3 launched successfully</span>
+                </div>
+
+                <div class="pvc__check-row pvc__check-row--done">
+                  <span class="pvc__check-icon" aria-hidden="true">✓</span>
+                  <span class="pvc__check-text">Week 2 sessions completed</span>
+                </div>
+
+                <div class="pvc__check-row pvc__check-row--done">
+                  <span class="pvc__check-icon" aria-hidden="true">✓</span>
+                  <span class="pvc__check-text">Engagement check: 91% active</span>
+                </div>
+
+                <div class="pvc__check-row pvc__check-row--active">
+                  <span class="pvc__check-icon pvc__check-icon--active" aria-hidden="true">→</span>
+                  <span class="pvc__check-text">Mid-point review — in progress</span>
+                </div>
+
+                <div class="pvc__check-row pvc__check-row--pending">
+                  <span class="pvc__check-icon pvc__check-icon--muted" aria-hidden="true">○</span>
+                  <span class="pvc__check-text">Week 4 facilitator briefing</span>
+                </div>
+
+              </div>
+
+              
+              <div class="pvc__alert">
+                <span class="pvc__alert-dot" aria-hidden="true"></span>
+                Live support active
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        
+
+        
+        <div class="phase-block reverse" data-phase="4">
+
+          
+          <div class="phase-visual">
+            <div class="phase-visual-card phase-visual-card--dark">
+
+              <p class="pvc__heading">Impact Dashboard</p>
+
+              
+              <div class="pvc__metric-row">
+                <div class="pvc__metric-info">
+                  <span class="pvc__metric-label">Session Attendance</span>
+                  <span class="pvc__metric-sub">Cohort 3 average</span>
+                </div>
+                
+                <span class="pvc__metric-value" id="metric-attendance">87%</span>
+              </div>
+
+              
+              <div class="pvc__metric-row">
+                <div class="pvc__metric-info">
+                  <span class="pvc__metric-label">Programme Completion</span>
+                  <span class="pvc__metric-sub">End-of-cohort rate</span>
+                </div>
+                
+                <span class="pvc__metric-value pvc__metric-value--gold" id="metric-completion">94%</span>
+              </div>
+
+              
+              <div class="pvc__bar-chart" aria-label="Learner progress chart" aria-hidden="true">
+                <div class="pvc__bar pvc__bar--h1"></div>
+                <div class="pvc__bar pvc__bar--h2"></div>
+                <div class="pvc__bar pvc__bar--h3"></div>
+                <div class="pvc__bar pvc__bar--h4"></div>
+                <div class="pvc__bar pvc__bar--active"></div>
+              </div>
+
+              <div class="pvc__output">
+                <span class="pvc__output-icon" aria-hidden="true">📊</span>
+                <span class="pvc__output-text">Output: Impact Report</span>
+              </div>
+
+            </div>
+          </div>
+
+          
+          <div class="phase-text">
+
+            <div class="phase-badge" aria-hidden="true">Phase 04</div>
+            <div class="section-tag section-tag--green">Measure &amp; Report</div>
+
+            <h2 class="approach-h2">
+              Prove your programme<br>
+              <span>creates real change</span>
+            </h2>
+
+            <p class="phase-desc">
+              We build the tracking and reporting infrastructure you need to
+              move beyond attendance numbers. Real learning evidence, funder-ready
+              reports, and data that helps you continuously improve — not just
+              record what happened.
+            </p>
+
+            <ul class="phase-bullets" aria-label="Phase 4 activities">
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Pre and post-programme learning assessments
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Learner engagement and completion tracking
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Qualitative outcome data collection
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Funder-ready impact reports and dashboards
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+        
+
+        
+        <div class="phase-block" data-phase="5">
+
+          
+          <div class="phase-text">
+
+            <div class="phase-badge" aria-hidden="true">Phase 05</div>
+            <div class="section-tag section-tag--green">Sustain &amp; Scale</div>
+
+            <h2 class="approach-h2">
+              Build something<br>
+              <span>that keeps growing</span>
+            </h2>
+
+            <p class="phase-desc">
+              A great first cohort means nothing if the second one falls apart.
+              We work with you after delivery to capture what worked, strengthen
+              what didn&rsquo;t, and build the infrastructure to run better
+              cohorts — indefinitely.
+            </p>
+
+            <ul class="phase-bullets" aria-label="Phase 5 activities">
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Retrospective review and learning audit
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Alumni community setup and activation
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Next cohort planning and iterative improvements
+              </li>
+              <li>
+                <span class="phase-bullet-dot" aria-hidden="true"></span>
+                Scaling strategy for growing reach or depth
+              </li>
+            </ul>
+
+          </div>
+
+          
+          <div class="phase-visual">
+            <div class="phase-visual-card phase-visual-card--dark">
+
+              <p class="pvc__heading">Cohort Pipeline</p>
+
+              
+              <div class="cohort-row">
+                <div class="cohort-row__info">
+                  <span class="cohort-row__name">Cohort 1</span>
+                  <span class="cohort-row__status cohort-row__status--complete">Completed</span>
+                </div>
+                <div class="cohort-row__bar-track">
+                  <div class="cohort-row__bar"></div>
+                </div>
+              </div>
+
+              <div class="cohort-row">
+                <div class="cohort-row__info">
+                  <span class="cohort-row__name">Cohort 2</span>
+                  <span class="cohort-row__status cohort-row__status--complete">Completed</span>
+                </div>
+                <div class="cohort-row__bar-track">
+                  <div class="cohort-row__bar"></div>
+                </div>
+              </div>
+
+              <div class="cohort-row">
+                <div class="cohort-row__info">
+                  <span class="cohort-row__name">Cohort 3</span>
+                  <span class="cohort-row__status cohort-row__status--active">Active</span>
+                </div>
+                <div class="cohort-row__bar-track">
+                  <div class="cohort-row__bar cohort-row__bar--active"></div>
+                </div>
+              </div>
+
+              
+              <div class="pvc__scale-note">
+                <span class="pvc__scale-icon" aria-hidden="true">🚀</span>
+                <span class="pvc__scale-text">Cohort 4 — planned &amp; funded</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        
+
+      </div>
+    </section>
+    
+
+    
+    <section class="why-section" id="why-it-works" aria-label="Why our approach works">
+      <div class="why-section__inner">
+
+        
+        <div class="why-section__header">
+          <div class="section-tag section-tag--green">Why It Works</div>
+          <h2 class="approach-h2 reveal">
+            The difference<br>
+            <span>our framework makes</span>
+          </h2>
+          <p class="approach-intro reveal">
+            Most programmes that struggle don&rsquo;t lack passion or purpose.
+            They lack structure. Here&rsquo;s what changes when you have the
+            right infrastructure in place.
+          </p>
+        </div>
+
+        
+        <div class="why-grid">
+
+          
+          <div class="why-comparisons reveal-left">
+
+            
+            <div class="comparison-header">
+              <div class="comparison-col-label comparison-col-label--without">
+                <span class="icon-x">✕ </span>Without Cohortle
+              </div>
+              <div class="comparison-col-label comparison-col-label--with">
+                <span class="icon-check">✓ </span>With Cohortle
+              </div>
+            </div>
+
+            
+            <div class="comparison-row">
+              <div class="without-col">
+                Programmes launch without a clear structure or roadmap
+              </div>
+              <div class="with-col">
+                Every phase is mapped before a single learner is enrolled
+              </div>
+            </div>
+
+            
+            <div class="comparison-row">
+              <div class="without-col">
+                Learner dropout goes unnoticed until it&rsquo;s too late
+              </div>
+              <div class="with-col">
+                Early-warning tracking catches disengagement in week one
+              </div>
+            </div>
+
+            
+            <div class="comparison-row">
+              <div class="without-col">
+                Facilitators improvise and burn out by the halfway point
+              </div>
+              <div class="with-col">
+                Facilitators are trained, guided, and supported throughout
+              </div>
+            </div>
+
+            
+            <div class="comparison-row">
+              <div class="without-col">
+                Funders ask for evidence — organisations have none to show
+              </div>
+              <div class="with-col">
+                Impact dashboards and reports are ready when funders ask
+              </div>
+            </div>
+
+            
+            <div class="comparison-row">
+              <div class="without-col">
+                Each cohort rebuilds from scratch — same mistakes repeated
+              </div>
+              <div class="with-col">
+                Every cohort is stronger than the last — learning compounds
+              </div>
+            </div>
+
+          </div>
+          
+
+          
+          <div class="why-stat-card reveal-right">
+
+            
+            <div class="why-stat-card__glow" aria-hidden="true"></div>
+
+            
+            <p class="why-stat-label">Average improvement in<br>programme completion rate</p>
+            <p class="why-stat-number">+78%</p>
+            <p class="why-stat-caption">across cohort-based programmes<br>partnered with Cohortle</p>
+
+            
+            <div class="why-stat-divider" aria-hidden="true"></div>
+
+            
+            <ul class="why-stat-points" aria-label="Supporting statistics">
+              <li>
+                <span class="why-stat-point-dot" aria-hidden="true"></span>
+                90% average cohort completion rate
+              </li>
+              <li>
+                <span class="why-stat-point-dot" aria-hidden="true"></span>
+                3× better outcomes than self-paced programmes
+              </li>
+              <li>
+                <span class="why-stat-point-dot" aria-hidden="true"></span>
+                50+ organisations across 12 African countries
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+        
+
+      </div>
+    </section>
+    
+
+    
+    <section class="approach-cta" id="approach-cta" aria-label="Work with Cohortle">
+
+      
+      <div class="approach-cta__blob approach-cta__blob--light" aria-hidden="true"></div>
+      <div class="approach-cta__blob approach-cta__blob--dark"  aria-hidden="true"></div>
+
+      <div class="approach-cta__content">
+
+        <h2 class="approach-cta__heading reveal">
+          Ready to put this<br>
+          framework to work?
+        </h2>
+
+        <p class="approach-cta__text reveal">
+          Tell us about your programme. We&rsquo;ll show you exactly where
+          in our approach you&rsquo;d start — and what the first 30 days
+          would look like.
+        </p>
+
+        <div class="approach-cta-btns reveal">
+          <a href="contact.html"  class="approach-cta__btn approach-cta__btn--primary">
+            Partner With Us &rarr;
+          </a>
+          <a href="what-we-support.html" class="approach-cta__btn approach-cta__btn--outline">
+            See What We Support &rarr;
+          </a>
+        </div>
+
+      </div>
+    </section>
+    
+
+    
+    <footer class="footer" role="contentinfo" aria-label="Site footer">
+
+      <div class="footer__grid">
+
+        
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo" aria-label="Cohortle — back to homepage">
+            Cohortle
+            <span class="footer__logo-dot" aria-hidden="true"></span>
+          </a>
+          <p class="footer__tagline">
+            Purpose-built infrastructure for non-formal,
+            cohort-based learning across Africa.
+          </p>
+          <div class="footer__socials" aria-label="Social media links">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn" rel="noopener">in</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter/X" rel="noopener">&#120143;</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram" rel="noopener">ig</a>
+            <a href="#" class="footer__social-link" aria-label="YouTube" rel="noopener">yt</a>
+          </div>
+        </div>
+
+        
+        <nav class="footer__col" aria-label="Footer pages navigation">
+          <p class="footer__col-heading">Pages</p>
+          <a href="index.html"         class="footer__link">Home</a>
+          <a href="about.html"         class="footer__link">About</a>
+          
+          <a href="our-approach.html"  class="footer__link footer__link--active">Our Approach</a>
+          <a href="what-we-support.html" class="footer__link">What We Support</a>
+          <a href="contact.html" class="footer__link">Partner With Us</a>
+        </nav>
+
+        
+        <nav class="footer__col" aria-label="Footer services navigation">
+          <p class="footer__col-heading">What We Do</p>
+          <a href="index.html#what-we-do" class="footer__link">Programme Design</a>
+          <a href="index.html#what-we-do" class="footer__link">Delivery Support</a>
+          <a href="index.html#what-we-do" class="footer__link">Impact Tracking</a>
+          <a href="index.html#what-we-do" class="footer__link">Community Building</a>
+          <a href="index.html#what-we-do" class="footer__link">Tools &amp; Infrastructure</a>
+          <a href="index.html#what-we-do" class="footer__link">Scaling Support</a>
+        </nav>
+
+        
+        <div class="footer__col">
+          <p class="footer__col-heading">Get In Touch</p>
+          <p class="footer__contact-item">&#128231; partner@cohortle.com</p>
+          <p class="footer__contact-item">&#127757; Across Africa</p>
+          <p class="footer__contact-item">&#128172; 48hr response time</p>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2026 Cohortle. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Service</a>
+        </div>
+      </div>
+
+    </footer>
+    
+
+    
+    
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    
+    <script>
+      window.addEventListener('scroll', () => {
+        const nav = document.getElementById('navbar')
+        if (nav) nav.classList.toggle('scrolled', window.scrollY > 50)
+      }, { passive: true })
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
