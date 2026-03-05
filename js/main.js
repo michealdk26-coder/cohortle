@@ -290,7 +290,7 @@ function animateCounter(el, target, duration) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return
 
-      statsBar.querySelectorAll('.stat-num').forEach(el => {
+      statsBar.querySelectorAll('.stats-bar__count').forEach(el => {
         const target = parseInt(el.dataset.target)
         if (!isNaN(target)) animateCounter(el, target)
       })
